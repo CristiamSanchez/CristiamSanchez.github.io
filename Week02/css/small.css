@@ -1,0 +1,187 @@
+@charset "utf-8";
+
+:root {
+    --blue: rgba(51, 119, 170, 1);
+    --blue-5: rgba(51, 119, 170, 0.5);
+    --blue-8: rgba(51, 119, 170, 0.8);
+    --brown: rgba(100, 50, 25, 1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background: #fff;
+}
+
+body {
+    width: 1000px;
+    height: 800px;
+    margin: auto;
+    background: white;
+}
+
+header {
+    width: 1000px;
+    height: 80px;
+    background: gray;
+}
+
+nav {
+    width: 1000px;
+    height: 40px;
+    background: green;
+}
+
+#subheader {
+    width: 960px;
+    margin: auto;
+}
+
+header ul {
+    list-style: none;
+}
+
+/* Menu */
+header #subheader {
+    float: left;
+    text-align: right;
+}
+
+header #subheader ul li {
+    display: inline;
+    font-family: sourcesans;
+}
+
+header #subheader ul li a {
+    color: #000;
+    font-size: 18px;
+    border-radius: 2px;
+}
+
+header #subheader ul li a:hover {
+    color: #fff;
+    background: #1798af;
+    text-decoration: none;
+}
+
+
+/*  Nuevo subheader */
+#subh nav {
+    float: left;
+    text-align: left;
+}
+
+#subh nav ul li {
+    display: inline;
+    font-family: sourcesans;
+}
+
+#subh nav ul li a {
+    color: #000;
+    font-size: 18px;
+    border-radius: 2px;
+}
+
+#subh nav ul li a:hover {
+    color: #fff;
+    background: #1798af;
+    text-decoration: none;
+}
+
+
+main {
+    width: 1000px;
+    height: 600px;
+    background: #fff;
+}
+
+footer {
+    width: 1000px;
+    height: 50px;
+    background: green;
+}
+
+section#logo {
+    width: 200px;
+    height: 100px;
+    float: left;
+    background: green;
+}
+
+section#banner {
+    width: 800px;
+    height: 100px;
+    float: left;
+    background: #fff;
+}
+
+article#one {
+    width: 330px;
+    height: 500px;
+    color: #000;
+    float: left;
+    padding: 1.5px;
+}
+
+article#two {
+    width: 330px;
+    height: 500px;
+    color: #000;
+    float: left;
+    padding: 1.5px;
+}
+
+article#three {
+    width: 330px;
+    height: 500px;
+    color: #000;
+    float: right;
+    padding: 1.5px;
+}
+
+section#logo img {
+    width: 200px;
+    height: 100px;
+}
+
+section#banner img {
+    width: 120px;
+    height: 50px;
+    padding-right: 10px;
+}
+
+article section img {
+    width: 300px;
+}
+
+footer p {
+    text-align: center;
+}
+
+.social-icons .social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 3.5rem;
+    width: 3.5rem;
+    background-color: #495057;
+    color: #fff;
+    border-radius: 100%;
+    font-size: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.social-icons .social-icon:last-child {
+    margin-right: 0;
+}
+
+.social-icons .social-icon:hover {
+    background-color: #bd5d38;
+}
+
+.dev-icons {
+    font-size: 3rem;
+}
