@@ -8,8 +8,9 @@
 }
 
 * {
-    margin: 0;
-    padding: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html {
@@ -93,8 +94,6 @@ header #subheader ul li a:hover {
 
 
 main {
-    width: 1000px;
-    height: 600px;
     background: #fff;
 }
 
@@ -118,44 +117,16 @@ section#banner {
     background: #fff;
 }
 
-article#one {
-    width: 330px;
-    height: 500px;
-    color: #000;
-    float: left;
-    padding: 1.5px;
-}
-
-article#two {
-    width: 330px;
-    height: 500px;
-    color: #000;
-    float: left;
-    padding: 1.5px;
-}
-
-article#three {
-    width: 330px;
-    height: 500px;
-    color: #000;
-    float: right;
-    padding: 1.5px;
-}
 
 section#logo img {
-    width: 200px;
-    height: 100px;
+    width: 100%;
 }
 
 section#banner img {
-    width: 120px;
-    height: 50px;
+    width: 100%;
     padding-right: 10px;
 }
 
-article section img {
-    width: 300px;
-}
 
 footer p {
     text-align: center;
@@ -184,4 +155,34 @@ footer p {
 
 .dev-icons {
     font-size: 3rem;
+}
+
+/* testing ranch code */
+main {
+    padding: 1rem 2%;
+    display: block;
+}
+
+main h1 {
+    columns: #17a8e4;
+}
+main figure img {
+    width: 100%;
+}
+
+main figure {
+    width: 100%;
+    margin: 0;
+}
+
+main figcaption {
+    text-align: center;
+    font-size: .8rem;
+}
+
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
 }

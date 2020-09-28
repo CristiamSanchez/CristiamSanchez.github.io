@@ -4,56 +4,63 @@
 <head>
     <title>La Via Campesina</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/normalize.css">
+    
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&family=Signika:wght@600;700&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Chilanka&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
         integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
         crossorigin="anonymous" />
-    <link rel="stylesheet" type="text/css" href="css/small.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- STYLE SHEETS -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/small.css" rel="stylesheet">
+    <link href="css/medium.css" rel="stylesheet">
+    <link href="css/large.css" rel="stylesheet">
 </head>
 <body>
     <header>
-        <section id="logo"><img src="img/Logo.jpg" alt="#babe"></section>
-        <section id="banner"><img src="img/LVC.jpg" alt="#me"></section>
-        <div id="subheader">
-            <ul>
-                <li><a href="#"> Quienes somos </a></li> &nbsp;
-                <li><a href="#"> Porque luchamos </a></li> &nbsp;
-                <li><a href="#"> A que nos enfrentamos </a></li> &nbsp;
-                <li><a href="#"> Prensa y publicaciones </a></li>
-            </ul>
-        </div>
+        <section id="logo"><img src="img/logo.jpg" alt="#logo"></section>     
     </header>
     <div id="subh">
-        <nav>
+        <nav class="clearfix">
             <ul>
-                <li><a href="#">Portada</a></li>&nbsp;
-                <li><a href="#">Ubicacion</a></li>
+                <li><a href="index.html">Servicios</a></li>
+                <li><a href="#">Localizacion</a></li>
+                <li><a href="#">Contactanos</a></li>
             </ul>
         </nav>
     </div>
 
     <main>
-        <article id="one">
-            <section class="widget">
-                <h3>Titulo / articulos recientes</h3>
-                <img src="img/campesinos.jpg" alt="#me">
-            </section>
-        </article>
-        <article id="two">
-            <section class="widget">
-                <h3>Titulo / articulos recientes</h3>
-                <img src="img/campesinos2.jpg" alt="#me">
-            </section>
-        </article>
-        <article id="three">
-            <section class="widget">
-                <h3>Titulo / articulos recientes</h3>
-            </section>
-        </article>
+        <!--  Information in columns-->
+        <h1>La Via Campesina Honduras</h1>
+        <figure>
+            <img src="img/campesinos.jpg" alt="Campesinos">
+            <figcaption>Campesinos Pechs</figcaption>
+        </figure>
+        <p>La Vía Campesina denuncia el robo descarado en las elecciones presidenciales del 26 de noviembre en Honduras.
+        </p>
 
+        <div class="news">
+            <p>
+                <h2>Honduras: “Es urgente que el Estado invierta en la Agricultura Campesina”.</h2>
+                Las organizaciones campesinas; Central Nacional de Trabajadores del Campo (CNTC), Consejo para el
+                Desarrollo Integral
+            </p>
+
+            <p>
+                <h2>Honduras: “Ni militarización, ni asesinadas, ni con hambre, ni expulsadas del país”.</h2>
+               Posicionamiento 25 de Noviembre – Jornada Mundial por la Eliminación de la violencia contra las
+            </p>
+
+            <p>
+                <h2>Honduras: Situación en el agro es muy crítica porque muchos perdieron sus cosechas</h2>
+                En el marco del lanzamiento de la Campaña Campesina e Indígena, “Cultivar sin Riesgo”, el
+            </p>
+        </div>
+
+        <!-- icons-->
         <div class="social-icons">
             <a class="social-icon" href="https://www.linkedin.com/in/cristiam-jose-sanchez-zelaya-898356198/"
                 target="_blank">
