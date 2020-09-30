@@ -17,24 +17,21 @@
         margin: auto;
     }
 
-    nav ul {
+    header nav ul {
         padding-left: 2%;
     }
 
-    nav li {
+    header nav li {
         width: auto;
     }
 
-    nav a {
+    header nav a {
         padding: .5rem 1rem;
-    }
-
-    main figure {
-        width: 31%;
-    }
-
+        text-align: center;
+    }    
     div.news {
         column-count: 3;
     }
+    
 
 }

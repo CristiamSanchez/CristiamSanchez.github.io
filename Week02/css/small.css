@@ -27,18 +27,22 @@ body {
 header {
     width: 1000px;
     height: 80px;
-    background: gray;
-}
-
-nav {
-    width: 1000px;
-    height: 40px;
     background: green;
 }
 
-#subheader {
-    width: 960px;
-    margin: auto;
+nav{
+    background-color: green;
+}
+nav a {
+    display: block;
+    padding: .8rem 0;
+    color:#fff;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #444;
 }
 
 header ul {
@@ -46,87 +50,54 @@ header ul {
 }
 
 /* Menu */
-header #subheader {
+header  {
     float: left;
     text-align: right;
 }
 
-header #subheader ul li {
+header  ul li {
     display: inline;
     font-family: sourcesans;
 }
 
-header #subheader ul li a {
+header  ul li a {
     color: #000;
     font-size: 18px;
     border-radius: 2px;
 }
 
-header #subheader ul li a:hover {
+header  ul li a:hover {
     color: #fff;
     background: #1798af;
     text-decoration: none;
 }
-
-
-/*  Nuevo subheader */
-#subh nav {
-    float: left;
-    text-align: left;
-}
-
-#subh nav ul li {
-    display: inline;
-    font-family: sourcesans;
-}
-
-#subh nav ul li a {
-    color: #000;
-    font-size: 18px;
-    border-radius: 2px;
-}
-
-#subh nav ul li a:hover {
+header nav ul li.active a {
+    background-color: #1798af;
     color: #fff;
-    background: #1798af;
-    text-decoration: none;
 }
-
 
 main {
-    background: #fff;
+    padding: 1rem 2%;
+    display: block;
+    background-color: #fff;
 }
 
 footer {
-    width: 1000px;
+    width: 100%;
     height: 50px;
     background: green;
 }
 
-section#logo {
+#logo {
     width: 200px;
     height: 100px;
     float: left;
     background: green;
 }
 
-section#banner {
-    width: 800px;
-    height: 100px;
-    float: left;
-    background: #fff;
-}
-
-
-section#logo img {
+#logo img {
     width: 100%;
 }
-
-section#banner img {
-    width: 100%;
-    padding-right: 10px;
-}
-
 
 footer p {
     text-align: center;
@@ -165,6 +136,7 @@ main {
 
 main h1 {
     columns: #17a8e4;
+    padding: 1rem;
 }
 main figure img {
     width: 100%;
@@ -179,6 +151,9 @@ main figcaption {
     text-align: center;
     font-size: .8rem;
 }
+
+
+
 
 
 .clearfix:after {
