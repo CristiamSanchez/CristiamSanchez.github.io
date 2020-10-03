@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Fill Me In">
+    <meta name="author" content="John Doe">
+
+    <!-- This start file was build by Paul Cheney  -->
+    <title>Plan design</title>
+
+    <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- STYLE SHEETS -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <!-- phone-default -->
+    <link href="css/small.css" rel="stylesheet">
+    <!-- enhance-tablet -->
+    <link href="css/medium.css" rel="stylesheet">
+    <!-- enhance-desktop -->
+    <link href="css/large.css" rel="stylesheet">
+    <!--CSS Bootstrap-->
+    <link href="css/styles.css" rel="stylesheet">
+
+    <style>
+        #color1 {
+            color: red;
+        }
+
+        #color2 {
+            color: blue;
+        }
+
+        #color3 {
+            color: white;
+        }
+
+        #color4 {
+            color: black;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- HEADER HERE -->
+    <header class="clearfix">
+        <!-- Logo was downloaded from: https://es.pngtree.com/freepng/cartoon-programmer_2659872.html for free-->
+        <img src="images/logo.png" alt="logo">
+        <h1>Website Planning Document</h1>
+        <h2>Forex academy 504</h2>
+    </header>
+
+    <!-- NAVIGATION HERE -->
+    <nav class="clearfix">
+        <ul>
+            <li><a href="index.html">Purpose</a></li>
+            <li><a href="typography.html">Typography</a></li>
+            <li><a href="target-audience.html">Target-Audience</a></li>
+            <li class="active"><a href="color-scheme.html">Colors</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- CONTENT HERE -->
+    <main>
+        <h1>Colors</h1><br><br><br>
+
+        <div class="row">
+            <div class="col-xl-3 col-md-6">
+                <div class="card bg-primary text-white mb-4">
+                    <div class="card-body">Profit signals</div>
+                    <div class="card-footer d-flex align-items-center justify-content-between">
+                        <p>A representation of the good signals</p>
+                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-6">
+                <div class="card bg-warning text-white mb-4">
+                    <div class="card-body">Bolinger bands</div>
+                    <div class="card-footer d-flex align-items-center justify-content-between">
+                        <p> Where the japanese candles must be into of the bands</p>
+                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-6">
+                <div class="card bg-success text-white mb-4">
+                    <div class="card-body">Bull signals</div>
+                    <div class="card-footer d-flex align-items-center justify-content-between">
+                        <p>A representation when it is important to buy</p>
+                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-6">
+                <div class="card bg-danger text-white mb-4">
+                    <div class="card-body">Bear signals</div>
+                    <div class="card-footer d-flex align-items-center justify-content-between">
+                        <p>A representation when it is important to sell</p>
+                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                    </div>
+                </div>
+            </div>
+             <div class="col-xl-3 col-md-6">
+                 <div class="card bg-dark text-white mb-4">
+                     <div class="card-body">Borders of the website</div>
+                     <div class="card-footer d-flex align-items-center justify-content-between">
+                         <p>The black color does not distract like other colors</p>
+                         <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                     </div>
+                 </div>
+             </div>
+
+              <div class="col-xl-3 col-md-6">
+                  <div class="card bg-light text-black mb-4">
+                      <div class="card-body">The body or estructure</div>
+                      <div class="card-footer d-flex align-items-center justify-content-between">
+                          <p>The white color does not tire the sight</p>
+                          <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                      </div>
+                  </div>
+              </div>
+        </div>
+
+
+    </main>
+
+    <!-- FOOTER HERE -->
+    <footer>
+        &copy; &bull; Cristiam Sanchez Z &bull;Today's date: <span id="currentdate"></span>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

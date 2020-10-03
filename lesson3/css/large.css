@@ -1,0 +1,51 @@
+/* 64em is also 1028px (if basefont is 16px) */
+@media only screen and (min-width: 64rem) {
+
+        header,
+        footer,
+        nav,
+        main {
+            max-width: 75rem;
+            margin: auto;
+        }
+/*----------- BODY --------------*/
+    nav ul {
+        padding-left: 2%;
+    }
+
+    nav li {
+        width: auto;
+    }
+
+    nav a {
+        padding: .5rem 1rem;
+    }
+
+
+/*----------- HEADER --------------*/
+
+
+
+/*----------- NAVIGATION --------------*/
+
+
+
+/*----------- MAIN --------------*/
+main figure {
+    width: 31%;
+}
+
+div.news {
+    column-count: 3;
+}
+
+main table {
+    table-layout: auto;
+    border-style: solid;
+}
+main table tr td{
+    border-style: groove;
+}
+/*----------- FOOTER --------------*/
+    
+} /* end of media query */
