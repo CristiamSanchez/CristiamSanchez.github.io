@@ -32,7 +32,9 @@
     }
 
     /* main */
-    
+    main section.forecast #forecastDIV {
+        display: grid;
+    }
 
 
 
