@@ -80,6 +80,11 @@ main {
 }
 
 /*main forecast */
+main .herodiv img{
+    width: 100%;
+    height: 60%;
+}
+
 .forecast #forecastDIV {
     display: none;
 }
@@ -132,10 +137,6 @@ div.hideme {
     transform: rotateY(180deg);
 }
 
-img {
-    width: 100%;
-    height: 100%;
-}
 
 .contenedor2 {
     margin: auto;
