@@ -1,0 +1,19 @@
+main {
+    margin: 0 auto;
+    max-width: 64rem;
+}
+
+main picture {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+    color: navy;
+}
+img {
+    margin: 15px;
+}
