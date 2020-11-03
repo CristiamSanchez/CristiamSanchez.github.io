@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <title>Lesson-8 Table!</title>
+
+    <style>
+        main {
+            align-items: center;
+            margin: 0;
+            padding: 100px;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid #628ca6;
+            border-collapse: collapse;
+            font-family: Ubuntu;
+        }
+
+        th {
+            font-size: 2rem;
+        }
+
+        th,
+        td {
+            padding: 15px;
+            text-align: center;
+        }
+
+        #t01 tr:nth-child(even) {
+            background-color: #e7ffed;
+        }
+
+        #t01 tr:nth-child(odd) {
+            background-color: #e7f0ed;
+        }
+
+        #t01 th {
+            background-color: #7fb9c2;
+            color: white;
+        }
+
+        h1 {
+            text-align: center;
+            text-decoration: double;
+            font-family: sans-serif;
+            background-color: #628ca6;
+        }
+
+        footer {
+            margin-top: 30px;
+            background-color: #628ca6;
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <main>
+        <h1>ACME Wildwest!</h1>
+        <table id="t01">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">Period</th>
+                    <th scope="col">Sales</th>
+                    <th scope="col">Sales Goal</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>August</td>
+                    <td>$3,000</td>
+                    <td>$4,000</td>
+                </tr>
+                <tr>
+                    <td>September</td>
+                    <td>$4,400</td>
+                    <td>$5,000</td>
+                </tr>
+                <tr>
+                    <td>October</td>
+                    <td>$4,800</td>
+                    <td>$5,000</td>
+                </tr>
+                <tr>
+                    <td>November</td>
+                    <td>$8,800</td>
+                    <td>$7,500</td>
+                </tr>
+                <tr>
+                    <td>Black Friday</td>
+                    <td colspan="2">$3,200</td>
+                </tr>
+                <tr>
+                    <td>December</td>
+                    <td>$6,200</td>
+                    <td>$7,500</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <footer>
+            <p>Compiled 12, 12 120000 By Cristiam Sanchez </p>
+        </footer>
+    </main>
+
+
+</body>
+
+</html>
