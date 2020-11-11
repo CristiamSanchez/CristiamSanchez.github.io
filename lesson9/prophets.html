@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Json Example</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="css/prophets.css"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Latter-day Prophets</h1>
+    </header>
+    <main>
+        <div class="cards"></div>
+
+    </main>
+    <footer>
+        Cristiam Sanchez | BYU-Idaho | WDD 230
+    </footer>
+    <script>
+        var staticURL = 'https://byui-cit230.github.io/lessons/lesson-09/data/latter-day-prophets.json';
+        $.getJSON(staticURL, function(data){
+            console.log("Inside the function")
+            /* for(i=0; i = data.length; i=i+1){
+                console.log(data[i].name)
+            } */
+        })
+    </script>
+    <script type="text/javascript" src="js/prophets.js"></script>
+
+</body>
+
+</html>
