@@ -22,7 +22,7 @@ fetch(requestURL)
         order.textContent = 'Order: ' + prophets[i].order; 
         bd.textContent = 'Birthday: ' + prophets[i].birthdate;
         bp.textContent = 'Bith Place: ' + prophets[i].birthplace; 
-        imagen.image =  image.setAttribute('src', prophets[i].imageurl);    
+        imagen.setAttribute('src', prophets[i].imageurl);    
 
 
         card.appendChild(h2);
