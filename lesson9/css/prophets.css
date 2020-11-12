@@ -4,7 +4,17 @@ body {
 }
 
 
-.main {
+main {
     background: blue;
+}
+main .cards{
+    background-color: bisque;
     text-align: center;
+    border-style: solid;
+}
+h1{
+    text-align: center;
+}
+ .img{
+    align-items: center;
 }
