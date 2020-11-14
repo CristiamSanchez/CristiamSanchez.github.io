@@ -86,8 +86,8 @@
         box-shadow: 0 0 30px #111;
         opacity: .7;
     }
-
-    .cities {
+    /*home page  */
+    .town {
         grid-template-columns: 1fr 1fr;
     }
 
