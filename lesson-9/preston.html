@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Fill Me In">
+    <meta name="author" content="John Doe">
+
+
+    <title>Preston</title>
+
+    <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="images/favicon.jpg" type="image/x-icon">
+
+
+
+    <!-- STYLE SHEETS -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <!-- phone-default -->
+    <link href="css/small.css" rel="stylesheet">
+    <!-- enhance-tablet -->
+    <link href="css/medium.css" rel="stylesheet">
+    <!-- enhance-desktop -->
+    <link href="css/large.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link href="css/styles.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- HEADER HERE -->
+    <header class="clearfix">
+        <!-- Logo was downloaded from: https://es.pngtree.com/freepng/cartoon-programmer_2659872.html for free-->
+        <figure class="logo">
+            <img src="images/logo1.png" alt="logo"
+                srcset="images/logo75.png 1x, images/logo150.png 2x, images/logo300.png 3x">
+        </figure>
+        <h1>Preston Wheather site</h1>
+        <h5>the most accurate wheather site</h5>
+    </header>
+
+
+    <!-- NAVIGATION HERE -->
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="preston.html">Preston</a></li>
+            <li><a href="sodaSprings.html">Soda Springs</a></li>
+            <li><a href="fishHaven.html">Fish Haven</a></li>
+            <li><a href="stormCenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- MAIN -->
+    <main>
+        <div id="message">Today is Saturday, please check your stuffs before the day of the Lord</div>
+        <h1>Preston</h1>
+
+        <div class="herodiv">
+            <figure class="myphoto">
+                <img src="images/original.jpeg" alt="Wheather" sizes="50vw" srcset="images/200.jpg 200w,
+                        images/500.jpg 500w,
+                        images/800.jpg 800w,
+                        images/1100.jpg 1100w">
+            </figure>
+            <!-- <img src="images/idaho.png" alt="idaho"> -->
+            <section class="stats">
+                <h2>Statistics</h2>
+                <p>Current Temperature: <span id="temp">34</span>&deg;</p>
+                <p>Wind Speed: <span id="speed">60</span>mph</p>
+                <p id="chill">Message:</p>
+            </section>
+        </div>
+
+        <section class="forecast">
+            <div id="forecastDIV">
+                <div>
+                    <h5>Monday</h5>
+                    <img src="images/sunny.png" alt="rain">
+                    <p>40&deg;</p>
+                </div>
+                <div>
+                    <h5>Tuesday</h5>
+                    <img src="images/storm.png" alt="rain">
+                    <p>42&deg;</p>
+                </div>
+                <div>
+                    <h5>Wednesday</h5>
+                    <img src="images/snowing.png" alt="rain">
+                    <p>38&deg;</p>
+                </div>
+                <div>
+                    <h5>Thursday</h5>
+                    <img src="images/rain.png" alt="rain">
+                    <p>43&deg;</p>
+                </div>
+                <div>
+                    <h5>Friday</h5>
+                    <img src="images/rainy.png" alt="rain">
+                    <p>40&deg;</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="news">
+            <p>
+                <h3>Purpose:</h3>
+            </p>
+            <div class="row">
+                <div class="col-xl-3 col-md-6">
+                    <div class="card bg-dark text-white mb-4">
+                        <div class="card-body">Hero W / Wheather summary </div>
+                        <div class="card-footer d-flex align-items-center justify-content-between">
+                            <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6">
+                    <div class="card bg-dark text-white mb-4">
+                        <div class="card-body">5 day forecast</div>
+                        <div class="card-footer d-flex align-items-center justify-content-between">
+                            <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6">
+                    <div class="card bg-dark text-white mb-4">
+                        <div class="card-body">Article</div>
+                        <div class="card-footer d-flex align-items-center justify-content-between">
+                            <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6">
+                    <div class="card bg-dark text-white mb-4">
+                        <div class="card-body">Contact information</div>
+                        <div class="card-footer d-flex align-items-center justify-content-between">
+                            <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="contactus">
+            <section class="infoLocation">
+                <h2>Contact us:</h2>
+                <p>Address: <span id="gender">Weather GO!
+                        123 Main Street
+                        Franklin, MI 87654</span></p>
+                <p>Phone: <span id="age">(801) 555-1234 </span></p>
+                <p>Email: <span id="shots">contact@weathergo.net</span></p>
+            </section>
+            <img src="images/preston.png" alt="location">
+        </div>
+    </main>
+
+    <!-- FOOTER HERE -->
+    <footer>
+        &copy; &bull; Cristiam Sanchez Z &bull; Today's date: <span id="currentdate"></span>
+    </footer>
+    <script src="js/scripts.js"></script>
+    <script src="js/wind.js"></script>
+    <script>
+        const today = new Date();
+        const dayNumber = today.getDay();
+        const element = document.getElementById("message");
+
+        if (dayNumber == 5) {
+            element.classList.add("showme");
+        } else {
+            element.classList.add("hideme");
+        }
+    </script>
+</body>
+
+</html>
