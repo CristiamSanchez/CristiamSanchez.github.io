@@ -91,6 +91,14 @@
         grid-template-columns: 1fr 1fr;
     }
 
+    section {
+        display: flex;
+        flex-direction: row;
+    }
+
+    section:nth-child(odd) {
+        flex-direction: row-reverse;
+    }
     /*home page 
      .cities {
         grid-template-columns: 1fr 1fr 1fr;
