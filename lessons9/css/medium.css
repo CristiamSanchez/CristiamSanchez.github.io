@@ -55,14 +55,16 @@
     }
 
     main .contactus {
-        display: inline-grid;
+        display: grid;
         grid-template-columns: 1fr 1fr;
+        padding: 10px;
     }
 
     main .contactus {
         width: 100%;
         height: 100%;
     }
+    
 
     .infoLocation h2 {
         font-size: 1.5rem;
@@ -86,19 +88,19 @@
         box-shadow: 0 0 30px #111;
         opacity: .7;
     }
-    /*home page  */
+    /*home page  
     .town {
         grid-template-columns: 1fr 1fr;
     }
-
-    section {
-        display: flex;
-        flex-direction: row;
+    .section:nth-child(odd) img {
+        grid-column: 2;
+    }
+    .section:nth-child(odd) .cards {
+        grid-column: 1;
+        grid-row: 1;
     }
 
-    section:nth-child(odd) {
-        flex-direction: row-reverse;
-    }
+    */
     /*home page 
      .cities {
         grid-template-columns: 1fr 1fr 1fr;

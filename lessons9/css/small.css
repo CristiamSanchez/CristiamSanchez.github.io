@@ -257,8 +257,14 @@ form label.top input:required:vali {
     border-left: green solid 6px;
 }
 
+main .contactus {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 10px;
+}
+
 /* End Form */
-/* Home Page  */
+/* Home Page  
 .town {
     display: grid;
     grid-template-columns: 1fr;
@@ -291,6 +297,8 @@ main section img {
 main h2{
     text-align: center;
 }
+
+*/
 /* Home Page 
 .content{
     display: none;

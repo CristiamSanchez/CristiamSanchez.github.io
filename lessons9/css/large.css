@@ -50,11 +50,20 @@
     form label.sbs {
         padding: .4rem 0;
     }
-    /* Home page  */
+     main .contactus {
+         display: grid;
+         grid-template-columns: 1fr 1fr 1fr;
+         padding: 10px;
+     }
+     main .contactus h2{
+         text-align: center;
+     }
+    /* Home page  
+
     .town {
         grid-template-columns: 1fr 1fr 1fr;
     }
-
+    */
     /* Home page 
     section{
         flex: 3;
