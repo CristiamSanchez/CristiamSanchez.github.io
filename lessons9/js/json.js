@@ -23,12 +23,7 @@ fetch(requestURL)
                 population.textContent = "Population: " + towns[i].currentPopulation;
                 rainfall.textContent = "Annual Rain Fall: " + towns[i].averageRainfall;
                 name.textContent = towns[i].name + " ";
-            } else{
-                
-            } 
-
-            //img.setAttribute('src', "images/" + towns[i].photo);
-            //img.setAttribute('alt', "Photograph of: " + name.textContent);
+            } else{  } 
 
             if (i == 1 || i == 6 || i == 5) {
                 div.appendChild(name);
