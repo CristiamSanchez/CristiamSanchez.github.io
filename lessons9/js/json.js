@@ -1,5 +1,5 @@
 const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
-
+                    
 fetch(requestURL)
     .then(function (response) {
         return response.json();
@@ -15,24 +15,22 @@ fetch(requestURL)
             let rainfall = document.createElement('p');
             let img = document.createElement('img');
 
-            name.textContent = " " + towns[i].name + " ";
-            year.textContent = "Year Founded: " + towns[i].yearFounded;
-            population.textContent = "Population: " + towns[i].currentPopulation;
-            rainfall.textContent = "Annual Rain Fall: " + towns[i].averageRainfall;
-            if (towns[i].name == "Preston") {
+            
+            if (towns[i].name == "Preston" || towns[i].name == "Fish Haven" || towns[i].name == "Soda Springs") {
                 img.setAttribute('src', "images/prestono.jpg");
                 img.setAttribute('alt', "Photograph of: " + name.textContent);
-            } else if (towns[i].name == "Springfield") {
-                img.setAttribute('src', "images/fisho.jpg");
-                img.setAttribute('alt', "Photograph of: " + name.textContent);
-            } else if (towns[i].name == "Placerton") {
-                img.setAttribute('src', "images/sodaso.jpg");
-                img.setAttribute('alt', "Photograph of: " + name.textContent);
-            } else {}
+                year.textContent = "Year Founded: " + towns[i].yearFounded;
+                population.textContent = "Population: " + towns[i].currentPopulation;
+                rainfall.textContent = "Annual Rain Fall: " + towns[i].averageRainfall;
+                name.textContent = towns[i].name + " ";
+            } else{
+                
+            } 
+
             //img.setAttribute('src', "images/" + towns[i].photo);
             //img.setAttribute('alt', "Photograph of: " + name.textContent);
 
-            if (i == 0 || i == 4 || i == 5) {
+            if (i == 1 || i == 6 || i == 5) {
                 div.appendChild(name);
                 div.appendChild(year);
                 div.appendChild(population);
