@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Fill Me In">
+    <meta name="author" content="John Doe">
+
+
+    <title>Preston</title>
+
+    <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="images/favicon.jpg" type="image/x-icon">
+
+
+
+    <!-- STYLE SHEETS -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <!-- phone-default -->
+    <link href="css/small.css" rel="stylesheet">
+    <!-- enhance-tablet -->
+    <link href="css/medium.css" rel="stylesheet">
+    <!-- enhance-desktop -->
+    <link href="css/large.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/cards.css">
+
+</head>
+
+<body>
+    <!-- HEADER HERE -->
+    <header class="clearfix">
+        <!-- Logo was downloaded from: https://es.pngtree.com/freepng/cartoon-programmer_2659872.html for free-->
+        <figure class="logo">
+            <img src="images/logo1.png" alt="logo"
+                srcset="images/logo75.png 1x, images/logo150.png 2x, images/logo300.png 3x">
+        </figure>
+        <h1>Preston Wheather site</h1>
+        <h5>the most accurate wheather site</h5>
+    </header>
+
+
+    <!-- NAVIGATION HERE -->
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="sodaSprings.html">Soda Springs</a></li>
+            <li><a href="fishHaven.html">Fish Haven</a></li>
+            <li><a href="stormCenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <!-- MAIN -->
+    <main>
+        <h1>HOME</h1>
+        <div class="herodiv">
+            <figure class="myphoto">
+                <img src="images/original.jpeg" alt="Wheather" sizes="50vw" srcset="images/200.jpg 200w,
+                        images/500.jpg 500w,
+                        images/800.jpg 800w,
+                        images/1100.jpg 1100w">
+            </figure>
+        </div>
+        <div class="cities"></div><br>
+              <Section class="featuredBusiness">
+                  <h3>Featured Business: <span class="business-name">Sayache's Park</span></h3>
+                  <ul>
+                      <li>Grilled Items</li>
+                      <li>Soft Drinks</li>
+                      <li>Candy</li>
+                      <li>Phone: (502) 4441234</li>
+                  </ul>
+                  <div class="featureDetails">
+                      <picture>
+                          <img id="purpose" src="images/thumb_IMG_8402_1024.jpg" alt="Picture of river">
+                      </picture>
+                  </div>
+              </section>
+
+        <div class="contactus">
+            <section class="infoLocation">
+                <h2>Contact us:</h2>
+                <p>Address: <span id="gender">Weather GO!
+                        123 Main Street
+                        Franklin, MI 87654</span></p>
+                <p>Phone: <span id="age">(801) 555-1234 </span></p>
+                <p>Email: <span id="shots">contact@weathergo.net</span></p>
+            </section>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d47365.76991424243!2d-111.880325!3d42.0997469!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20Idaho%2083263%2C%20EE.%20UU.!5e0!3m2!1ses!2shn!4v1605915298019!5m2!1ses!2shn"
+                width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                tabindex="0"></iframe>
+        </div>
+    </main>
+    <!--   <main>
+        <h2>Home</h2>
+        <div class="town">
+            <section id="Preston">
+                <div class="cards"></div>
+                <img src="images/prestono.jpg" alt="image 1">
+            </section>
+            <section id="SodaS">
+                <div class="cards"></div>
+                <img src="images/sodaso.jpg" alt="image 2">
+            </section>
+            <section id="FishH">
+                <div class="cards"></div>
+                <img src="images/fisho.jpg" alt="image 3">
+            </section>
+        </div>
+    </main> -->
+
+
+    <!-- <main>
+        <section>
+            <h2>Home</h2>
+            <div class="media flipped">
+                <div class="image"><img src="images/Preston-O.jpeg" alt="image 1"></div>
+                <div class="content">This is the content of my media object. Items directly inside the flex container
+                    will be aligned to flex-start.</div>
+            </div>
+            <div class="media flipped">
+                <div class="content">This is the content of my media object. Items directly inside the flex container
+                    will be aligned to flex-start.</div>
+                <div class="image"><img src="images/FishH-O.jpg" alt="image 2"></div>
+            </div>
+            <div class="media flipped">
+                <div class="image"><img src="images/SodaS-O.jpg" alt="image 3"></div>
+                <div class="content">This is the content of my media object. Items directly inside the flex container
+                    will be aligned to flex-start.</div>
+            </div>
+        </section>
+    </main>
+-->
+    <!-- FOOTER HERE -->
+    <footer>
+        &copy; &bull; Cristiam Sanchez Z &bull; Today's date: <span id="currentdate"></span>
+    </footer>
+    <script src="js/scripts.js"></script>
+    <script src="js/json.js"></script>
+    <script type="text/javascript" src="js/town.js"></script>
+</body>
+
+</html>
