@@ -17,12 +17,21 @@ fetch(requestURL)
 
             
             if (towns[i].name == "Preston" || towns[i].name == "Fish Haven" || towns[i].name == "Soda Springs") {
-                img.setAttribute('src', "images/prestono.jpg");
-                img.setAttribute('alt', "Photograph of: " + name.textContent);
                 year.textContent = "Year Founded: " + towns[i].yearFounded;
                 population.textContent = "Population: " + towns[i].currentPopulation;
                 rainfall.textContent = "Annual Rain Fall: " + towns[i].averageRainfall;
                 name.textContent = towns[i].name + " ";
+                if(towns[i].name== "Preston"){
+                    img.setAttribute('src', "images/prestono.jpg");
+                    img.setAttribute('alt', "Photograph of: " + name.textContent);
+                } else if(towns[i].name== "Fish Haven"){
+                    img.setAttribute('src', "images/fisho.jpg");
+                    img.setAttribute('alt', "Photograph of: " + name.textContent);
+                }else if(towns[i].name == "Soda Springs"){
+                    img.setAttribute('src', "images/sodaso.jpg");
+                    img.setAttribute('alt', "Photograph of: " + name.textContent);
+                }else{}
+                
             } else{  } 
 
             if (i == 1 || i == 6 || i == 5) {

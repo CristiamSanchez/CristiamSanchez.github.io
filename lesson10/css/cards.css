@@ -1,7 +1,3 @@
-h1 {
-    text-align: center;
-    padding-top: 20px;
-}
 
 .cities {
     display: grid;
@@ -68,7 +64,7 @@ section img {
     .cities {
         grid-template-columns: 1fr 1fr 1fr;
     }
-
+    
     .cities section {
         display: inline-block;
         max-width: 280px;

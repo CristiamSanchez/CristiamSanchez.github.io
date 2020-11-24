@@ -24,48 +24,157 @@
     <!-- enhance-desktop -->
     <link href="css/large.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    
+
     <link href="css/styles.css" rel="stylesheet">
 
 </head>
 
 <body>
-     <!-- HEADER HERE -->
-     <header class="clearfix">
-         <!-- Logo was downloaded from: https://es.pngtree.com/freepng/cartoon-programmer_2659872.html for free-->
-         <figure class="logo">
-             <img src="images/logo1.png" alt="logo"
-                 srcset="images/logo75.png 1x, images/logo150.png 2x, images/logo300.png 3x">
-         </figure>
-         <h1>Preston Wheather site</h1>
-         <h5>the most accurate wheather site</h5>
-     </header>
+    <!-- HEADER HERE -->
+    <header class="clearfix">
+        <!-- Logo was downloaded from: https://es.pngtree.com/freepng/cartoon-programmer_2659872.html for free-->
+        <figure class="logo">
+            <img src="images/logo1.png" alt="logo"
+                srcset="images/logo75.png 1x, images/logo150.png 2x, images/logo300.png 3x">
+        </figure>
+        <h1>Preston Wheather site</h1>
+        <h5>the most accurate wheather site</h5>
+    </header>
 
 
 
-        <!-- NAVIGATION HERE -->
-        <nav class="clearfix">
-            <button onclick="toggleMenu()">&#9776;</button>
-            <ul id="primaryNav" class="hide">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="preston.html">Preston</a></li>
-                <li><a href="sodaSprings.html">Soda Springs</a></li>
-                <li class="active"><a href="fishHaven.html">Fish Haven</a></li>
-                <li><a href="stormCenter.html">Storm Center</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-            </ul>
-        </nav>
+    <!-- NAVIGATION HERE -->
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="sodaSprings.html">Soda Springs</a></li>
+            <li class="active"><a href="fishHaven.html">Fish Haven</a></li>
+            <li><a href="stormCenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
 
 
 
     <!-- CONTENT HERE -->
     <main>
+        <!-- CONTENT HERE -->
+        <div id="message">Today is Saturday, please check your stuffs before the day of the Lord</div>
         <h1>Fish Haven</h1>
-        <hr>
-        <div class="contenedor2"><iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.77385346184!2d-111.9153445360233!3d42.09974162635858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20Idaho%2083263%2C%20EE.%20UU.!5e0!3m2!1ses!2shn!4v1602129899002!5m2!1ses!2shn"
-            width="300" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-            tabindex="0"></iframe>
+
+        <div class="herodiv">
+            <figure class="myphoto">
+                <img src="images/fhoriginal.jpeg" alt="Wheather" sizes="50vw" srcset="images/fh200.jpg 200w,
+                        images/fh500.jpg 500w,
+                        images/fh800.jpg 800w,
+                        images/fh1100.jpg 1100w">
+            </figure>
+            <!-- <img src="images/idaho.png" alt="idaho"> -->
+            <section class="stats">
+                <h2>Statistics for <span id="place">city</span></h2>
+                <p>Current Temperature: <span id="currentTemp">00</span>&deg;</p>
+                <p>Wind Speed: <span id="windSpeed">xx</span>mph</p>
+                <p id="chill">Message:</p>
+                <!-- <img id="weather_icon" src="images/placeholder.png" alt="current weather"> -->
+            </section>
+        </div>
+        <h2 class="msg">Forecast </h2>
+        <p class="msg">High Temperature forecast at noon of each day going forward</p>
+        <section class="forecast">
+            <div id="forecastDIV">
+                <div>
+                    <p>
+                        <h5><span id="dayofweek1"></span> :</h5> <br>
+                        <span id="forecast1"></span>&deg; F <br>
+                        <img id="weather_icon" src="images/rainy.png" alt="current weather">
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        <h5><span id="dayofweek2"></span> :</h5> <br>
+                        <span id="forecast2"></span>&deg; F <br>
+                        <img id="weather_icon1" src="images/rainy.png" alt="current weather">
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        <h5><span id="dayofweek3"></span> :</h5> <br>
+                        <span id="forecast3"></span>&deg; F <br>
+                        <img id="weather_icon2" src="images/rainy.png" alt="current weather">
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        <h5><span id="dayofweek4"></span> :</h5> <br>
+                        <span id="forecast4"></span>&deg; F <br>
+                        <img id="weather_icon3" src="images/rainy.png" alt="current weather">
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        <h5><span id="dayofweek5"></span> :</h5> <br>
+                        <span id="forecast5"></span>&deg; F <br>
+                        <img id="weather_icon4" src="images/rainy.png" alt="current weather">
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+        <div class="news">
+            <p>
+                <h3>Purpose:</h3>
+            </p>
+            <div class="row">
+                <div class="col-xl-3 col-md-6">
+                    <div class="card bg-dark text-white mb-4">
+                        <div class="card-body">Hero W / Wheather summary </div>
+                        <div class="card-footer d-flex align-items-center justify-content-between">
+                            <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6">
+                    <div class="card bg-dark text-white mb-4">
+                        <div class="card-body">5 day forecast</div>
+                        <div class="card-footer d-flex align-items-center justify-content-between">
+                            <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6">
+                    <div class="card bg-dark text-white mb-4">
+                        <div class="card-body">Article</div>
+                        <div class="card-footer d-flex align-items-center justify-content-between">
+                            <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6">
+                    <div class="card bg-dark text-white mb-4">
+                        <div class="card-body">Contact information</div>
+                        <div class="card-footer d-flex align-items-center justify-content-between">
+                            <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="contactus">
+            <section class="infoLocation">
+                <h2>Contact us:</h2>
+                <p>Address: Weather GO!
+                    Head north on US-89 S toward Fish Haven Canyon Rd</p>
+                <p>Phone: +12085471043 </p>
+                <p>Email: contact@weathergo.net</p>
+            </section>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5926.524002281755!2d-111.40261501314117!3d42.03756181690825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x875415e9bdab006f%3A0xc1864ed86dd2b0e4!2sFish%20Haven%2C%20ID%2083287!5e0!3m2!1sen!2sus!4v1606237217817!5m2!1sen!2sus"
+                width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                tabindex="0"></iframe>
         </div>
     </main>
 
@@ -73,8 +182,20 @@
     <footer>
         &copy; &bull; Cristiam Sanchez Z &bull; Today's date: <span id="currentdate"></span>
     </footer>
-
     <script src="js/scripts.js"></script>
+    <script src="js/windfh.js"></script>
+    <script src="js/forecastfh.js"></script>
+    <script>
+        const today = new Date();
+        const dayNumber = today.getDay();
+        const element = document.getElementById("message");
+
+        if (dayNumber == 5) {
+            element.classList.add("showme");
+        } else {
+            element.classList.add("hideme");
+        }
+    </script>
 </body>
 
 </html>

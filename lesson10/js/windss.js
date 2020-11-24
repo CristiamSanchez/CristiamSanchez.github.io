@@ -1,5 +1,5 @@
 
-const apiURL = "//api.openweathermap.org/data/2.5/weather?zip=83263,us&appid=35f1ed9250cdcba10033ff9e383b7d68&units=imperial"   //preston
+const apiURL = "//api.openweathermap.org/data/2.5/weather?zip=83276,us&appid=35f1ed9250cdcba10033ff9e383b7d68&units=imperial"   //preston
 
 //const apiURL = "//api.openweathermap.org/data/2.5/weather?zip=83287,us&appid=35f1ed9250cdcba10033ff9e383b7d68&units=imperial" //fish haven
 //const apiURL = "//api.openweathermap.org/data/2.5/weather?zip=83276,us&appid=35f1ed9250cdcba10033ff9e383b7d68&units=imperial" //soda springs
@@ -27,7 +27,7 @@ fetch(apiURL)
     {
         document.getElementById("chill").textContent = "The Windchill is: " + windchill+  "\xB0F";
     }else{
-        document.getElementById("chill").textContent = "No Windchill today";
+        document.getElementById(chill).textContent = "No Windchill today";
     }
 
  }); 

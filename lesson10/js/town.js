@@ -1,6 +1,6 @@
 
-const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
-fetch(requestURL)
+const requestURLHome = 'https://byui-cit230.github.io/weather/data/towndata.json';
+fetch(requestURLHome)
     .then(function (response) {
         return response.json();
     })
@@ -31,7 +31,6 @@ fetch(requestURL)
                 card.appendChild(ar);
                 card.appendChild(bp);
                 console.log(card);
-                
                 document.querySelector('#FishH').appendChild(card);
             } else if(towns[i].name == "Preston") {
                 h2.textContent =  towns[i].name;
