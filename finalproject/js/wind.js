@@ -12,8 +12,9 @@ fetch(apiURL)
     //Once it comes back, display it to the console.
     console.log(wheatherInfo);
     document.getElementById('place').innerHTML = wheatherInfo.name;
-    document.getElementById('currentTemp').innerHTML = wheatherInfo.main.temp;
+    document.getElementById('currentTemp').innerHTML = wheatherInfo.main.temp_max;
     document.getElementById('windSpeed').innerHTML = wheatherInfo.wind.speed;
+    document.getElementById('humidity').innerHTML = wheatherInfo.main.humidity + ' %';
     
     const iconcode = wheatherInfo.weather[0].icon;
     console.log(iconcode);
