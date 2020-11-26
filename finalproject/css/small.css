@@ -262,8 +262,21 @@ main .contactus {
     grid-template-columns: 1fr wrap;
     padding: 10px;
 }
-main .contactus .imgLocation{
-    display: none;
+main .contactus iframe{
+    width: 300px;
+}
+
+main h1{
+    padding-left: 5px;
+}
+main section h2{
+    padding-left: 5px;
+}
+.msg{
+    padding-left: 5px;
+}
+main .news h3{
+    padding-left: 5px;
 }
 /* End Form */
 /* Home Page  
