@@ -70,6 +70,9 @@
         display: flex;
         flex-wrap:  wrap;
     }
+    main .contactus iframe {
+        width: 400px;
+    }
     /* Home page  
 
     .town {

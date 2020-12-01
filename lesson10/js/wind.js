@@ -15,7 +15,7 @@ fetch(apiURL)
     document.getElementById('currentTemp').innerHTML = wheatherInfo.main.temp_max;
     document.getElementById('windSpeed').innerHTML = wheatherInfo.wind.speed;
     document.getElementById('humidity').innerHTML = wheatherInfo.main.humidity + ' %';
-
+    
     const iconcode = wheatherInfo.weather[0].icon;
     console.log(iconcode);
     //const icon_path = "//openweathermap.org/img/w/" + iconcode + ".png";

@@ -40,9 +40,15 @@
     }
     /* section gallery */
     div.gridGallery {
+        display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
+        
     }
-
+    .gridGallery figure{
+         align-self: center;
+         justify-self: center;
+    }
     div.container {
         display: block;
         text-align: center;

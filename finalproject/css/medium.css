@@ -28,7 +28,7 @@
     /* section gallery */
     div.gridGallery {
         grid-template-columns: 1fr 1fr;
-        margin: 1px;
+        align-items: center;
     }
 
     /* end section gallery */
