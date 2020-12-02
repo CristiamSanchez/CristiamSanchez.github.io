@@ -14,13 +14,13 @@ fetch('js/townInfo.js')
             let p3 = document.createElement('p');
             
 
-            if (towns[i].name == "Preston") {
+            if (towns[i].name == "Fish Haven") {
                 p.textContent =  towns[i].events[0];
                 p2.textContent =  towns[i].events[1];
                 p3.textContent =  towns[i].events[2];
                 console.log(towns[i].events[0]);
             } 
-            if (i == 5) {
+            if (i == 1) {
                 div.appendChild(p);
                 div.appendChild(p2);
                 div.appendChild(p3);

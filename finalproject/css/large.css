@@ -79,6 +79,15 @@
     main .contactus iframe {
         width: 400px;
     }
+
+    .city{
+        border: solid 2px;
+        background-color: cadetblue;
+        box-shadow: 2rem;
+        text-align: center;
+        width: 100%;
+    }
+
     /* Home page  
 
     .town {
