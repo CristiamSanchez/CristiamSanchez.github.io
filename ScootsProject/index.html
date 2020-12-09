@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Fill Me In">
+    <meta name="author" content="John Doe">
+
+
+    <title>ScoterRentalCo.</title>
+
+    <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="images/favicon.jpg" type="image/x-icon">
+
+    <!-- STYLE SHEETS -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <!-- phone-default -->
+    <link href="css/small.css" rel="stylesheet">
+    <!-- enhance-tablet -->
+    <link href="css/medium.css" rel="stylesheet">
+    <!-- enhance-desktop -->
+    <link href="css/large.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/cards.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- HEADER HERE -->
+    <header class="clearfix">
+        <!-- Logo was downloaded from: https://stock.adobe.com/ for free-->
+        <figure class="logo">
+            <img src="img/logo1.png" alt="logo"
+                srcset="img/logo75.png 1x, img/logo150.png 2x, img/logo300.png 3x">
+        </figure>
+        <h1>Scooter Rental Co.</h1>
+        <h5>The most incredible place to find fun</h5>
+    </header>
+
+    <!-- NAVIGATION HERE -->
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="rentals.html">Rentals</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="tours.html">Tours</a></li>
+            <li class="active"><a href="index.html">Home</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- MAIN -->
+    <main>
+        <div id="message">Today is Saturday, please check your stuffs before the day of the Lord</div>
+        <h1>Home</h1>
+
+        <!-- SLIDER -->
+        <div class="containerSlider">
+            <h2>Playa del Carmen, Mexico</h2>
+            <ul class="slider">
+                
+                <li id="slide1">
+                    <img src="img/slideshow/2.jpg" >
+                </li>
+                <li id="slide2">
+                    <img src="img/slideshow/3.jpg" >
+                </li>
+                <li id="slide3">
+                    <img src="img/slideshow/4.jpg" >
+                </li>
+                <li id="slide4">
+                    <img src="img/slideshow/5.jpg">
+                </li>
+            </ul>
+
+              <ul class="menu">
+                  <li>
+                      <a href="#slide1">1</a>
+                  </li>
+                  <li>
+                      <a href="#slide2">2</a>
+                  </li>
+                  <li>
+                      <a href="#slide3">3</a>
+                  </li>
+                  <li>
+                      <a href="#slide4">4</a>
+                  </li>
+                  
+              </ul>
+
+        </div>
+        <!-- END SLIDER -->
+
+        <div class="Maya">
+            <h3>Weather:</h3>
+            <hr>
+            <div class="herodiv">
+                <section class="stats">
+                    <h5>Statistics for <span id="place">city</span></h5>
+                    <p>High: <span id="currentTemp">00</span>&deg; F</p>
+                    <p>Humidity: <span id="humidity">00</span></p>
+                    <p>Wind Speed: <span id="windSpeed">xx</span>mph</p>
+                   <!-- <p id="chill">Message:</p>-->
+                </section>
+                
+            </div> <br><br>
+            <!-- Forecast-->
+            <section class="forecast">
+                <div id="forecastDIV">
+                    <div>
+
+                        <h5><span id="dayofweek1"></span> :</h5> <br>
+                        <span id="forecast1"></span>&deg; F <br>
+                        <img id="weather_icon" src="img/sunny.png" alt="current_weather">
+
+                    </div>
+                    <div>
+
+                        <h5><span id="dayofweek2"></span> :</h5> <br>
+                        <span id="forecast2"></span>&deg; F <br>
+                        <img id="weather_icon1" src="img/sunny.png" alt="current_weather">
+
+                    </div>
+                    <div>
+
+                        <h5><span id="dayofweek3"></span> :</h5> <br>
+                        <span id="forecast3"></span>&deg; F <br>
+                        <img id="weather_icon2" src="img/sunny.png" alt="current_weather">
+
+                    </div>
+                    <div>
+
+                        <h5><span id="dayofweek4"></span> :</h5> <br>
+                        <span id="forecast4"></span>&deg; F <br>
+                        <img id="weather_icon3" src="img/sunny.png" alt="current_weather">
+
+                    </div>
+                    <div>
+
+                        <h5><span id="dayofweek5"></span> :</h5> <br>
+                        <span id="forecast5"></span>&deg; F <br>
+                        <img id="weather_icon4" src="img/sunny.png" alt="current_weather">
+
+                    </div>
+
+                </div>
+            </section><br>
+            <!-- End Forecast-->
+        </div><br>
+
+        <!-- Table prices-->
+        <table id="t01">
+            <thead class="thead-dark">
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th colspan="2">Reservation</th>
+                    <th colspan="2">Walk-in</th>
+                </tr>
+                <tr>
+                    <th scope="col">Rental Type</th>
+                    <th scope="col">Max. Persons.</th>
+                    <th scope="col">Half day(3 hrs)</th>
+                    <th scope="col">Full day</th>
+                    <th scope="col">Half day(3 hrs)</th>
+                    <th scope="col">Full day</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Honda Metro Scooter</td>
+                    <td>1</td>
+                    <td>$20</td>
+                    <td>$30</td>
+                    <td>$25</td>
+                    <td>$35</td>
+                </tr>
+                <tr>
+                    <td>Honda Dio Scooter</td>
+                    <td>2</td>
+                    <td>$30</td>
+                    <td>$40</td>
+                    <td>$35</td>
+                    <td>$45</td>
+                </tr>
+                <tr>
+                    <td>Honda PCX150 Scooter</td>
+                    <td>2</td>
+                    <td>$40</td>
+                    <td>$50</td>
+                    <td>$45</td>
+                    <td>$55</td>
+                </tr>
+                <tr>
+                    <td>November</td>
+                    <td>1</td>
+                    <td>$20</td>
+                    <td>$30</td>
+                    <td>$25</td>
+                    <td>$35</td>
+                </tr>
+                <tr>
+                    <td>Honda Pioneer ATV</td>
+                    <td>4</td>
+                    <td>$50</td>
+                    <td>$70</td>
+                    <td>$60</td>
+                    <td>$80</td>
+                </tr>
+                <tr>
+                    <td>Jeep Wrangler - 4 door with a/c</td>
+                    <td>5</td>
+                    <td>$70</td>
+                    <td>$100</td>
+                    <td>$85</td>
+                    <td>$125</td>
+                </tr>
+                <tr>
+                    <td>Jeep Wrangler - 2 door</td>
+                    <td>4</td>
+                    <td>$60</td>
+                    <td>$85</td>
+                    <td>$70</td>
+                    <td>$90</td>
+                </tr>
+            </tbody>
+        </table><br><br>
+        <!-- End table-->
+
+            <div id="socialM">
+                <section id="acerca-de">
+                    <article>
+                        <hgroup>
+                            <h3>Our Social Media</h3><br>
+                        </hgroup>
+                    </article>
+                </section>
+                <section id="social-s">
+                    <div class="email"><a href="#">Email</a> </div>
+                    <div class="twitter"><a href="#">Twitter</a> </div>
+                    <div class="youtube"><a href="#">Youtube</a> </div>
+                    <div class="facebook"><a href="#">Facebook</a> </div>
+                </section>
+            </div>
+
+
+    </main><br><br><br><br><br>
+    
+
+    <!-- FOOTER HERE -->
+    <footer>
+        &copy; &bull; Cristiam Sanchez Z &bull; Today's date: <span id="currentdate"></span> 
+        &bull; source: https://openweathermap.org &bull; &bull; source images: https://honda.com & https://depositphotos.com &bull;
+    </footer>
+    <script src="js/scripts.js"></script>
+    <script src="js/wind/windc.js"></script>
+    <script src="js/forecast.js"></script>
+    <script>
+        const today = new Date();
+        const dayNumber = today.getDay();
+        const element = document.getElementById("message");
+
+        if (dayNumber == 6) {
+            element.classList.add("showme");
+        } else {
+            element.classList.add("hideme");
+        }
+    </script> 
+</body>
+
+</html>

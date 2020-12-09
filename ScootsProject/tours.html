@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Fill Me In">
+    <meta name="author" content="John Doe">
+
+
+    <title>ScoterRentalCo.</title>
+
+    <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="images/favicon.jpg" type="image/x-icon">
+
+    <!-- STYLE SHEETS -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <!-- phone-default -->
+    <link href="css/small.css" rel="stylesheet">
+    <!-- enhance-tablet -->
+    <link href="css/medium.css" rel="stylesheet">
+    <!-- enhance-desktop -->
+    <link href="css/large.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- HEADER HERE -->
+    <header class="clearfix">
+        <!-- Logo was downloaded from: https://stock.adobe.com/ for free-->
+        <figure class="logo">
+            <img src="img/logo1.png" alt="logo" srcset="img/logo75.png 1x, img/logo150.png 2x, img/logo300.png 3x">
+        </figure>
+        <h1>Scooter Rental Co.</h1>
+        <h5>The most incredible place to find fun</h5>
+    </header>
+
+    <!-- NAVIGATION HERE -->
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="rentals.html">Rentals</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li class="active"><a href="tours.html">Tours</a></li>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- MAIN -->
+    <main>
+        
+        <h1>Tours</h1>
+
+           <!-- SLIDER -->
+           <div class="containerSlider">
+               <h2>Playa del Carmen, Mexico</h2>
+               <ul class="slider">
+                   <li id="slide1">
+                       <img src="img/slidershow/1.jpg">
+                   </li>
+                   <li id="slide2">
+                       <img src="img/slidershow/2.jpg">
+                   </li>
+                   <li id="slide3">
+                       <img src="img/slidershow/3.jpg">
+                   </li>
+                   <li id="slide4">
+                       <img src="img/slidershow/4.jpg">
+                   </li>
+                   <li id="slide5">
+                       <img src="img/slidershow/5.jpg">
+                   </li>
+                   <li id="slide6">
+                       <img src="img/slidershow/6.jpg">
+                   </li>
+                   <li id="slide7">
+                       <img src="img/slidershow/7.jpg">
+                   </li>
+                   <li id="slide8">
+                       <img src="img/slidershow/8.jpg">
+                   </li>
+                   <li id="slide9">
+                       <img src="img/slidershow/9.jpg">
+                   </li>
+                   <li id="slide10">
+                       <img src="img/slidershow/10.jpg">
+                   </li>
+               </ul>
+
+               <ul class="menu">
+                   <li>
+                       <a href="#slide1">1</a>
+                   </li>
+                   <li>
+                       <a href="#slide2">2</a>
+                   </li>
+                   <li>
+                       <a href="#slide3">3</a>
+                   </li>
+                   <li>
+                       <a href="#slide4">4</a>
+                   </li>
+                   <li>
+                       <a href="#slide5">5</a>
+                   </li>
+                   <li>
+                       <a href="#slide6">6</a>
+                   </li>
+                   <li>
+                       <a href="#slide7">7</a>
+                   </li>
+                   <li>
+                       <a href="#slide8">8</a>
+                   </li>
+                   <li>
+                       <a href="#slide9">9</a>
+                   </li>
+                   <li>
+                       <a href="#slide10">10</a>
+                   </li>
+               </ul>
+
+           
+            </div>
+           <!-- END SLIDER -->
+           <p>
+               <h5>Some tours from Playa del Carmen: </h5><br>
+               <ol start="1">
+                   <li>1. Playa del Carmen to Cenote.
+                   </li>
+                   <li>2. Playa del Carmen to Chichen Itza.
+                   </li>
+                   <li>3. Playa del Carmen to Tulum.
+                   </li>
+                   <li>4. Isla Cozumel.
+                   </li>
+               </ol>
+           </p>
+
+            <p id="contenidos_1"> 
+                Afterwards, you can take a tour of its most emblematic street, Fifth Avenue, known for the number of
+                boutiques, handicraft stores and bars that it concentrates. Nearby is the Fundadores Park, the scene of
+                musical and folkloric shows, the L’Aquarium aquarium and the Frida Kahlo Museum.
+                Playa del Carmen is located 76 kilometers from Cancun and from there you can travel (by land or by
+                ferry) to other Caribbean paradises, such as Tulum, Cozumel and Isla Mujeres. Although it enjoys a very
+                good climate throughout the year, the best season to visit it is from December to June as the humidity
+                and heat is not overwhelming. This destination has been blessed by nature, so we suggest hiring a round
+                trip excursion to swim with turtles in Akumal, walk through the Río Secreto underground cave or explore
+                the archaeological sites of Cobá and Xaman-Há.
+                **Information was taken from: https://www.visitmexico.com/
+            </p>
+            <a id="enlace_1" href="#" onclick="muestraOculta('1'); return false;">Hide content</a><br><br>
+
+    </main>
+
+    <!-- FOOTER HERE -->
+    <footer>
+        &copy; &bull; Cristiam Sanchez Z &bull; Today's date: <span id="currentdate"></span> &bull; source:
+        https://openweathermap.org &bull; &bull; source images:
+        https://honda.com & https://depositphotos.com &bull;
+    </footer>
+    <script src="js/scripts.js"></script>
+    <script type="text/javascript">
+        function muestraOculta(id) {
+            var elemento = document.getElementById('contenidos_' + id);
+            var enlace = document.getElementById('enlace_' + id);
+
+            if (elemento.style.display == "" || elemento.style.display == "block") {
+                elemento.style.display = "none";
+                enlace.innerHTML = 'Mostrar contenidos';
+            } else {
+                elemento.style.display = "block";
+                enlace.innerHTML = 'Ocultar contenidos';
+            }
+        }
+    </script>
+</body>
+
+</html>

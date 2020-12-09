@@ -1,0 +1,169 @@
+/* 64em is also 1028px when basefont is 16px */
+@media only screen and (min-width: 65em) {
+
+    nav {
+        background: #cc9600;
+        background: -moz-linear-gradient(top, #906810 0%, hsl(41, 80%, 31%) 100%);
+        background: -webkit-linear-gradient(top, #906810 0%, #906810 100%);
+        background: linear-gradient(to bottom, #906810 0%, #906810 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cc0000', endColorstr='#cc0000', GradientType=0);
+    }
+
+    nav button {
+        display: none;
+    }
+
+    nav ul.hide {
+        display: block;
+    }
+
+    nav ul {
+        margin-right: 5%;
+    }
+
+    nav ul li {
+        float: right;
+    }
+
+    nav ul li a {
+        border: none;
+        border-right: 1px solid rgba(0, 0, 0, 0.3);
+        padding: .6rem 1rem;
+    }
+
+/* slider */
+    main .containerSlider {
+         margin: auto;
+         background-color: white;
+         width: 850px;
+         padding: 5px;
+    }
+    main h2{
+        text-align: center;
+    }
+    main ul,li {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+    main ul.slider {
+        position: relative;
+        width: 850px;
+        height: 300px;
+    }
+    
+      main ul.slider li {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        opacity: 0;
+        width: inherit;
+        height: inherit;
+        transition: opacity .5s;
+        background: #fff;
+    }
+    
+    main ul.slider li img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    } 
+    main ul.slider li:first-child {
+        opacity: 1;
+    }
+
+    main ul.slider li:target {
+        opacity: 1;
+    }
+
+    main .menu {
+        text-align: center;
+        margin: 15px;
+    }
+
+    main .menu li {
+        display: inline-block;
+        text-align: center;
+    }
+
+    main .menu li a {
+        display: inline-block;
+        color: white;
+        text-decoration: none;
+        background-color: grey;
+        padding: 5px;
+        width: 25px;
+        height: 25px;
+        font-size: 20px;
+        border-radius: 100%;
+    }
+    /*end slider */
+    
+
+    .Maya {
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 100%;
+        height: 430px;
+        background-color: rgb(177, 17, 17);
+        
+    }
+    /* Forecast */
+    main section.forecast #forecastDIV {
+        display: grid;
+        align-items: center;
+        margin-top: 11.5rem;
+        
+    }
+
+    /*end forecast */
+
+    /* section gallery */
+    div.gridGallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 50px;
+
+    }
+    div.gridGallery img{
+        height: 300px;
+        width: 250px;
+    }
+
+    .gridGallery figure {
+        align-self: center;
+        justify-self: center;
+    }
+    .gridGallery figcaption{
+        text-align: center;
+        font-size: 1.2rem;
+    }
+    div.container {
+        display: block;
+        text-align: center;
+    }
+    /*end Gallery */
+    
+    /*contact info*/
+    main .contactus {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr wrap;
+        padding: 20px;
+    }
+    main .contactus h2 {
+        text-align: center;
+    }
+    main .contactus .imgLocation {
+        display: flex;
+        flex-wrap: 1fr 1fr wrap;
+    }
+    main .contactus .infoLocation {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    main .contactus iframe {
+        width: 400px;
+    }
+    /*end contact */
+}
+
+/*end large */

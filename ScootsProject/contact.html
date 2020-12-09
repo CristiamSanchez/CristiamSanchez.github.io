@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Fill Me In">
+    <meta name="author" content="John Doe">
+
+
+    <title>ScoterRentalCo.</title>
+
+    <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="images/favicon.jpg" type="image/x-icon">
+
+    <!-- STYLE SHEETS -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <!-- phone-default -->
+    <link href="css/small.css" rel="stylesheet">
+    <!-- enhance-tablet -->
+    <link href="css/medium.css" rel="stylesheet">
+    <!-- enhance-desktop -->
+    <link href="css/large.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- HEADER HERE -->
+    <header class="clearfix">
+        <!-- Logo was downloaded from: https://stock.adobe.com/ for free-->
+        <figure class="logo">
+            <img src="img/logo1.png" alt="logo" srcset="img/logo75.png 1x, img/logo150.png 2x, img/logo300.png 3x">
+        </figure>
+        <h1>Scooter Rental Co.</h1>
+        <h5>The most incredible place to find fun</h5>
+    </header>
+
+    <!-- NAVIGATION HERE -->
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li class="active"><a href="contact.html">Contact</a></li>
+            <li><a href="rentals.html">Rentals</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="tours.html">Tours</a></li>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- MAIN -->
+    <main>
+        <form action="" class="form">
+            <div class="form-header">
+                <h1 class="form-title"><span>Contact</span></h1>
+            </div>
+
+            <label for="nombre" class="form-label">Full name: </label>
+            <input type="text" id="nombre" class="form-input" placeholder="Fill your name" required>
+
+            <label for="correo" class="form-label">Email: </label>
+            <input type="email" id="correo" class="form-input" placeholder="Email" required>
+
+            <label for="mensaje" class="form-label">Message: </label>
+            <textarea id="mensaje" class="form-textarea" placeholder="Write a question"></textarea>
+
+            <input type="submit" class="btn-submit" value="Send">
+        </form><br><br>
+
+          <div class="contactus">
+              <section class="infoLocation">
+                  <h2>Contact us:</h2>
+                  <p>Address: 
+                      Av. 20 Norte entre Calles 8 y 10 Norte. Col. Centro</p>
+                  <p>Phone: (984) 877 3050</p>
+                  <p>Email: contact@cozumel.net</p>
+              </section>
+              <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d119468.41286301073!2d-87.0716964!3d20.6537919!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e4323d22d4e61%3A0xe8c10b783bab4adc!2sPlaya%20del%20Carmen%2C%20Q.R.%2C%20M%C3%A9xico!5e0!3m2!1ses!2shn!4v1607481901821!5m2!1ses!2shn"
+                  width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                  tabindex="0"></iframe>
+          </div>
+
+    </main>
+
+    <!-- FOOTER HERE -->
+    <footer>
+        &copy; &bull; Cristiam Sanchez Z &bull; Today's date: <span id="currentdate"></span> &bull; source:
+        https://openweathermap.org &bull; &bull; source images:
+        https://honda.com & https://depositphotos.com &bull;
+    </footer>
+    <script src="js/scripts.js"></script>
+    
+</body>
+
+</html>

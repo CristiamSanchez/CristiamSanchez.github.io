@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Fill Me In">
+    <meta name="author" content="John Doe">
+
+
+    <title>ScoterRentalCo.</title>
+
+    <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="images/favicon.jpg" type="image/x-icon">
+
+    <!-- STYLE SHEETS -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <!-- phone-default -->
+    <link href="css/small.css" rel="stylesheet">
+    <!-- enhance-tablet -->
+    <link href="css/medium.css" rel="stylesheet">
+    <!-- enhance-desktop -->
+    <link href="css/large.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- HEADER HERE -->
+    <header class="clearfix">
+        <!-- Logo was downloaded from: https://stock.adobe.com/ for free-->
+        <figure class="logo">
+            <img src="img/logo1.png" alt="logo" srcset="img/logo75.png 1x, img/logo150.png 2x, img/logo300.png 3x">
+        </figure>
+        <h1>Scooter Rental Co.</h1>
+        <h5>The most incredible place to find fun</h5>
+    </header>
+
+    <!-- NAVIGATION HERE -->
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="rentals.html">Rentals</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="tours.html">Tours</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="thanks.html">Thanks</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- MAIN -->
+     <main>
+         <h1>The reservations has been created</h1><br><br><br>
+        <h5 id="h5msg">Please check your email account, we have sent you an email confirmation. </h5>
+     </main>
+
+    <!-- FOOTER HERE -->
+    <footer>
+        &copy; &bull; Cristiam Sanchez Z &bull; Today's date: <span id="currentdate"></span> &bull; source:
+        https://openweathermap.org &bull; &bull; source images:
+        https://honda.com & https://depositphotos.com &bull;
+    </footer>
+    <script src="js/scripts.js"></script>
+    <script>
+        const today = new Date();
+        const dayNumber = today.getDay();
+        const element = document.getElementById("message");
+
+        if (dayNumber == 5) {
+            element.classList.add("showme");
+        } else {
+            element.classList.add("hideme");
+        }
+    </script>
+</body>
+
+</html>
